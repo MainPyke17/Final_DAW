@@ -88,7 +88,7 @@ function añadirEventos() {
   for (let f = 0; f < filas; f++) {
     for (let c = 0; c < columnas; c++) {
       let celda = document.getElementById(`celda-${c}-${f}`);
-      celda.oncontextmenu = (e) => e.preventDefault(); 
+      celda.oncontext3enu = (e) => e.preventDefault(); 
       celda.addEventListener("dblclick", function (me) {
         dobleClic(celda, c, f, me);
       });
